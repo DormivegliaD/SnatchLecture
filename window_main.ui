@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>window_main</class>
+    <widget class="QWidget" name="window_main">
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>703</width>
+                <height>499</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>Snatch Lecture</string>
+        </property>
+        <property name="windowIcon">
+            <iconset resource="resource/icon.qrc">
+                <normaloff>:/ico/icon.ico</normaloff>:/ico/icon.ico
+            </iconset>
+        </property>
+        <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+        </property>
+        <widget class="QGroupBox" name="groupBox_info">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>181</width>
+                    <height>121</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>基本信息</string>
+            </property>
+            <widget class="QLabel" name="label_stuid">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>30</y>
+                        <width>31</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>学号：</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_pwd">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>60</y>
+                        <width>31</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>密码：</string>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_stuid">
+                <property name="geometry">
+                    <rect>
+                        <x>50</x>
+                        <y>30</y>
+                        <width>113</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+            </widget>
+            <widget class="QLineEdit" name="lineEdit_pwd">
+                <property name="geometry">
+                    <rect>
+                        <x>50</x>
+                        <y>60</y>
+                        <width>113</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="echoMode">
+                    <enum>QLineEdit::Password</enum>
+                </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_save">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>90</y>
+                        <width>111</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>保存并自动登录</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_fun">
+            <property name="geometry">
+                <rect>
+                    <x>190</x>
+                    <y>0</y>
+                    <width>161</width>
+                    <height>121</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>功能界面</string>
+            </property>
+            <widget class="QPushButton" name="pushButton_getMsg">
+                <property name="enabled">
+                    <bool>false</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>50</y>
+                        <width>75</width>
+                        <height>23</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>已报讲座</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_autoEnroll">
+                <property name="enabled">
+                    <bool>false</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>80</y>
+                        <width>75</width>
+                        <height>23</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>自动报名</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_login">
+                <property name="enabled">
+                    <bool>true</bool>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>40</x>
+                        <y>20</y>
+                        <width>75</width>
+                        <height>23</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>登录</string>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_log">
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>360</x>
+                    <y>10</y>
+                    <width>331</width>
+                    <height>101</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QListWidget" name="listWidget">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>120</y>
+                    <width>691</width>
+                    <height>371</height>
+                </rect>
+            </property>
+        </widget>
+    </widget>
+    <resources>
+        <include location="resource/icon.qrc"/>
+    </resources>
+    <connections/>
+    <slots>
+        <slot>saveInfo()</slot>
+    </slots>
+</ui>
