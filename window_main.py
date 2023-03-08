@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+import icon_rc
 
 class Ui_window_main(object):
     def setupUi(self, window_main):
